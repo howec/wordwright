@@ -3,6 +3,14 @@
 Created and maintained by: TheReddKing (TechX)
 
 ## Dev:
+
+### Setting Up Front End
+
+    cd client
+    npm install
+    
+
+
 ### Local Installation:
 
     python -m venv env
