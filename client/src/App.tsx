@@ -7,6 +7,11 @@ import AppHeader from "./AppHeader";
 import LandingPage from "./components/LandingPage";
 import LoginCallback from "./components/LoginCallback";
 
+
+//SIDEBAR
+// import Sidebar from "./components/Sidebar";
+
+
 import Alert from "react-s-alert";
 
 import "react-s-alert/dist/s-alert-default.css";
@@ -31,5 +36,6 @@ const App: React.FC = () => {
     </Fragment>
   );
 };
+
 
 export default App;
