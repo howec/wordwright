@@ -53,14 +53,15 @@ marvel_model = torch.load('../stor/marvel_model.pt')
 # connection_model = torch.load('../stor/ChickenSoup_model.pt')
 
 #import words
-# hp_words = load("hp_wordbank.txt")
-# got_words = load("got_wordbank.txt")
-# lotr_words = load("got_wordbank.txt")
-# marvel_words = load("marvel_wordbank.txt")
-# connection = load("marvel_wordbank.txt")
+hp_words = np.loadtxt("HP_wordbank.txt", delimiter=",", unpack=False)
+got_words = np.loadtxt("gGOT_wordbank.txt", delimiter=",", unpack=False)
+lotr_words = np.loadtxt("LOTR_wordbank.txt", delimiter=",", unpack=False)
+marvel_words = np.loadtxt("Marvel_wordbank.txt", delimiter=",", unpack=False)
+connection = np.loadtxt("CS_wordbank.txt", delimiter=",", unpack=False)
 
 def createWordbank(source,no_writers):
     n = 5 #n is the amount of words per writer
+    words = []
     if source == "Harry Potter":
         words = createWordbank(hp_words,no_writers)
     elif source == "Game of Thrones":
@@ -72,7 +73,7 @@ def createWordbank(source,no_writers):
     # elif source == "Connection":
     #     words = createWordbank(connectionl_words,no_writers)
 
-    wordbank = random.choices(parent_wordbank, k=no_writers*n)
+    wordbank = random.choices(words, k=no_writers*n)
 
     print(wordbank)
 
@@ -93,6 +94,6 @@ def createPrompt(source):
 
     print(prompt)
 
-    return [prompt,wordbank]
+    return prompt
 
 
