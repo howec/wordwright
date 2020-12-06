@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AppHeader from "./AppHeader";
 import LandingPage from "./components/LandingPage";
 import LoginCallback from "./components/LoginCallback";
+import WrightPage from "./components/WrightPage";
 
 
 //SIDEBAR
@@ -26,8 +27,9 @@ const App: React.FC = () => {
           <div className="App">
             <AppHeader />
             <Switch>
-              <Route exact path="/login/auth" component={LoginCallback} />
-              <Route path="/" component={LandingPage} />
+
+              <Route path="/" exact component={LandingPage} />
+              <Route path="/wright" component={WrightPage} />
             </Switch>
           </div>
         </CookiesProvider>

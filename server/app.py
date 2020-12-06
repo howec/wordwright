@@ -1,6 +1,8 @@
 from flask_sqlalchemy import SQLAlchemy
-from flask import Flask
+from flask import Flask, jsonify
 from flask_dotenv import DotEnv
+from server.controllers.room_tracker import init_room_tracker
+from server.controllers.cron import cron_job
 import os
 
 print("Initializing Backend")
@@ -27,6 +29,7 @@ else:
 # Routes for heroku push
 @app.route('/')
 def root():
+    print('here')
     return app.send_static_file('index.html')
 
 @app.route('/wrightpage') 
@@ -38,6 +41,25 @@ def wrightpage():
     # make into two different functions/paths??
     wordbank = createWordbank(source,no_writers)
     return jsonify([prompt,wordbank])
+    
+# [] Eventually move to API Dev 
+@app.route('/create-room/<room_id>')
+def create_room(room_id):
+    print(room_id)
+    t = {'room_id': room_id}
+    return jsonify(t)
+
+@app.route('/story-time)
+def story_time():
+    create_room()
+    # create_room
+    #    add id to a list of active rooms
+    #    get room id
+    # return room_id
+    # 
+    print(room_id)
+    t = {'room_id': room_id}
+    return jsonify(t)
 
 @app.route('/<path:path>')
 def static_proxy(path):
