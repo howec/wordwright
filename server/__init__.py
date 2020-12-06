@@ -13,3 +13,6 @@ sched = BackgroundScheduler()
 sched.add_job(cron_job, trigger='interval', days=1)
 sched.start()
 cron_job()
+
+# Initialize RoomTracker
+room_tracker = init_room_tracker()
