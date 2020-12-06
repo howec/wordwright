@@ -1,16 +1,17 @@
 import React from "react";
-import { Container, Button } from "reactstrap";
-import useLogin from "../hooks/useLogin";
+import { Container, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
-  const { redirectToDopeAuth } = useLogin();
+
   return (
     <Container>
-      <h1>{process.env.REACT_APP_NAME}</h1>
-
-      <Button onClick={() => redirectToDopeAuth()} color="primary">
-        Login with DopeAuth
+      <h1>WordWright</h1>
+      
+      <Button component = { Link } to="/wright" variant="outlined" color="primary">
+        Let's Wright!
       </Button>
+
     </Container>
   );
 };
