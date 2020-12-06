@@ -51,20 +51,20 @@ class Sidebar extends Component {
 			    <div className="room-link" style={{textAlign:"left"}}> 
 			        <p>Welcome USERNAME-HERE!</p>
 			        <p>
-			        	Invite your friends:
+			        	Share with your friends:
 			        	<br />
-						<i>room url here</i>
+						<i>room code here</i>
 			        </p>
 		        </div>
 		        <br />
 
 		        <div className="title-stuff">
 		        	<img src={logo} />
-		        	<h1>WORDWRIGHT</h1>
+		        	<h1>WordWright</h1>
 		        </div>
 		        <br />
 		        
-		        <h1>Inspiration</h1>
+		        <h3>Inspiration</h3>
 				<div>
 				    <div onChange = {this.setInspiration.bind(this)} className="text-sources" style={{textAlign:"left"}}>
 				      {/* Default unchecked */}
@@ -90,7 +90,7 @@ class Sidebar extends Component {
 			    <br />
 
 			    <div className = "people-listed" style={{textAlign:"left"}}>
-			        <p><i>People present...</i></p>
+			        <p><i>0 online...</i></p>
 		        </div>
 
 		    </SidebarContainer>
