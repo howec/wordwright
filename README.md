@@ -2,25 +2,37 @@
 ![words](pictures/together.gif)
 
 ## Inspiration
-> 
+ 
 
 ## What it does
->
+>   * 1: 
+>   * 2:
+>   * 3:
+>   * 4:
+>   * 5:
 
 ## How we built it
-> 
+>   * 1:
+>   * 2:
+>   * 3:
+>   * 4:
+>   * 5:
 
 ## Challenges we ran into
->
+>   *
+>   *
+>   *
+>   *
+>   *
 
 ## Accomplishments that we're proud of
->   * 1: Collected substanial amount of data using API calls
->   * 2: Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
->   * 3: Partially completed an interactive story writing web application using tools such as React
->   * 4: Cleaned datasets using Regular Expressions
->   * 5: Worked together as a team 
->   * 6: Spent more than 50 hours on the project
->   * 7: Learned new methods
+>   * Collected substanial amount of data using API calls
+>   * Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
+>   * Partially completed an interactive story writing web application using tools such as React and Flask
+>   * Cleaned datasets using Regular Expressions
+>   * Worked together as a team 
+>   * Spent more than 50 hours on the project
+>   * Learned new methods
 
 
 ## What we learned
