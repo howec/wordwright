@@ -5,21 +5,21 @@
  
 
 ## What it does
->   * 1: 
->   * 2:
->   * 3:
->   * 4:
->   * 5:
+>   1. 
+>   2. 
+>   3. 
+>   4. 
+>   5. 
 
 ## How we built it
->   * 1:
->   * 2:
->   * 3:
->   * 4:
->   * 5:
+>   1.
+>   2.
+>   3.
+>   4.
+>   5.
 
 ## Challenges we ran into
->   *
+>   * 
 >   *
 >   *
 >   *
@@ -28,6 +28,7 @@
 ## Accomplishments that we're proud of
 >   * Collected substanial amount of data using API calls
 >   * Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
+>   * Generated a word bank containing words that represent each writing category 
 >   * Partially completed an interactive story writing web application using tools such as React and Flask
 >   * Cleaned datasets using Regular Expressions
 >   * Worked together as a team 
