@@ -13,13 +13,13 @@
 >   6. When the time is up the collaborative story will appear on the summary page and the player with the most words used is the winner!
 
 ## How we built it
-* React-Native - for the mobile application framework
-* JavaScript - web app development 
-* Python - frontend and backend
-* Flask - Deploying the models in the backend 
-* PyTorch - Natural Language Generation 
-* APIs - data collection
-* Regular Expression - data cleaning to remove unnecessary punctuations and characters
+>   * React-Native - for the mobile application framework
+>   * JavaScript - web app development 
+>   * Python - frontend and backend
+>   * Flask - Deploying the models in the backend 
+>   * PyTorch - Natural Language Generation 
+>   * APIs - data collection
+>   * Regular Expression - data cleaning to remove unnecessary punctuations and characters
 
 ## Challenges we ran into
 >   * Used APIs for data collection that were difficult to use due to lack of proper documentations
