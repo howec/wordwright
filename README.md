@@ -16,8 +16,8 @@
 * React-Native - for the mobile application framework
 * JavaScript - web app development 
 * Python
-* Flask
-* PyTorch
+* Flask - Deploying the models in the backend 
+* PyTorch - Natural Language Generation 
 * APIs - data collection
 * Regular Expression - data cleaning to remove unnecessary punctuations and characters
 
@@ -43,10 +43,14 @@
 
 
 ## What we learned
-> 
+>   * Better communication between frontend and backend development early on
+>   * Improve how to clean and reorganize messy datasets
+>   * How to create backend logic for keeping track of several games and users at once 
+>   * How to better store models web app deployment 
+>   * How Natural Language Generators (NLG) models work
 
 ## What's next for WordWright
->
+> 
 
 ![words2](pictures/read&write.gif)
 
