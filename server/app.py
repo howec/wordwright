@@ -3,7 +3,11 @@ from flask import Flask, jsonify
 from flask_dotenv import DotEnv
 from server.controllers.room_tracker import init_room_tracker
 from server.controllers.cron import cron_job
+from server.controllers.room_tracker import init_room_tracker
+from server.controllers.inspiration import createPrompt
+from server.controllers.inspiration import createWordbank
 import os
+
 
 print("Initializing Backend")
 app = Flask(__name__, static_folder='build')
@@ -30,17 +34,32 @@ else:
 @app.route('/')
 def root():
     print('here')
+    # REPACE HTML FILE
     return app.send_static_file('index.html')
 
 @app.route('/wrightpage') 
 def wrightpage():
+    print("you've made it to the writing page")
+        # REPACE HTML FILE
+
+    return app.send_static_file('writingpage.html')
+
+
+@app.route('/wrightpage', methods=['GET','POST']) 
+def promptManager():
     # GET USERSELECTION FROM FRONTEND
     source = "USERSELECTION"
-    # no_writers = Room.
-    prompt = createPrompt(source, no_writers)
-    # make into two different functions/paths??
-    wordbank = createWordbank(source,no_writers)
-    return jsonify([prompt,wordbank])
+    if request.method=='POST':
+        inspiration = request.form.get("inspiration") #how are we getting things??
+        no_writers = len(Room.writers) #import
+        prompt = createPrompt(inspiration)
+        wordbank = createWordbank(inspiration,no_writers)
+        
+        print(prediction_text)
+        return jsonify([prompt,wordbank])
+    
+    return
+
     
 # [] Eventually move to API Dev 
 @app.route('/create-room/<room_id>')
@@ -49,7 +68,7 @@ def create_room(room_id):
     t = {'room_id': room_id}
     return jsonify(t)
 
-@app.route('/story-time)
+@app.route('/story-time')
 def story_time():
     create_room()
     # create_room
