@@ -1,3 +1,5 @@
+# WordWright
+
 # Template React + Flask framework
 
 Created and maintained by: TheReddKing (TechX)

@@ -3,10 +3,12 @@ from flask import Flask, jsonify
 from flask_dotenv import DotEnv
 import os
 from flask_socketio import SocketIO
-
 from server.controllers.room_tracker import *
 from server.controllers.room import *
 from server.controllers.wrighter import *
+from server.controllers.inspiration import createPrompt
+from server.controllers.inspiration import createWordbank
+
 
 print("Initializing Backend")
 app = Flask(__name__, static_folder='build')
@@ -34,30 +36,50 @@ room_tracker = init_room_tracker()
 @app.route('/')
 def root():
     print('here')
+    # REPACE HTML FILE
     return app.send_static_file('index.html')
 
 @app.route('/wrightpage') 
 def wrightpage():
+    print("you've made it to the writing page")
+        # REPACE HTML FILE
+
+    return app.send_static_file('writingpage.html')
+
+
+@app.route('/wrightpage', methods=['GET','POST']) 
+def promptManager():
     # GET USERSELECTION FROM FRONTEND
     source = "USERSELECTION"
-    # no_writers = Room.
-    prompt = createPrompt(source, no_writers)
-    # make into two different functions/paths??
-    wordbank = createWordbank(source,no_writers)
-    return jsonify([prompt,wordbank])
+    if request.method=='POST':
+        inspiration = request.form.get("inspiration") #how are we getting things??
+        no_writers = len(Room.writers) #import
+        prompt = createPrompt(inspiration)
+        wordbank = createWordbank(inspiration,no_writers)
+        
+        print(prediction_text)
+        return jsonify([prompt,wordbank])
+    
+    return
 
+@app.route('/api/inspiration/get-prompt', methods=['GET'])
+def get_prompt():
+    return None
 
-
+@app.route('/api/inspiration/get-word-bank', methods=['GET']) 
+def get_word_bank():
+    return None
+    
 # [] Eventually move to API Dev 
-# @app.route('/create-room/<room_id>')
-# def create_room(room_id):
-#     print(room_id)
-#     t = {'room_id': room_id}
-#     return jsonify(t)
+@app.route('/create-room/<room_id>')
+def create_room(room_id):
+    print(room_id)
+    t = {'room_id': room_id}
+    return jsonify(t)
 
-# @app.route('/story-time')
-# def story_time():
-#     create_room()
+@app.route('/story-time')
+def story_time():
+    create_room()
     # create_room
     #    add id to a list of active rooms
     #    get room id
