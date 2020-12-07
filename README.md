@@ -2,7 +2,7 @@
 ![words](pictures/together.gif)
 
 ## Inspiration
- 
+From the five themes centered by Terminal Hackathon, we chose to focus on togetherness and find a way for users to spend quality time with friends and family in the midst of pandemic lockdown restrictions. We were inspired by a team member who did collaborative storytelling in her past. The idea is one person writes a sentence and the next person adds their own sentence to eventually create a story. We further expanded on this idea by providing themes to inspire the users to start writing. In an effort to maximize the connection between the participating users, we chose franchise themes that users would enjoy and be familiar with (Harry Potter, The Lord of the Rings, The Game of Thrones, Marvel) as well as a theme centered on deeper reflection (Chicken Noodle Soup for the Soul).
 
 ## What it does
 >   1. Download the WordWright app.
@@ -50,7 +50,7 @@
 >   * How Natural Language Generators (NLG) models work
 
 ## What's next for WordWright
-> Our team will continue working on deploying the model, finalize the frontend design, connect the frontend and the backend, and deploy the final story writing web app on Heroku. We will also consider adding more writing categories and 
+> Our team will continue working on deploying the model, finalize the frontend design, connect the frontend and the backend, and deploy the final story writing web app on Heroku.
 
 
 ![words2](pictures/read&write.gif)
