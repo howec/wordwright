@@ -1,0 +1,87 @@
+
+
+.manuscript {
+    background-color: rgb(204, 218, 230);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    height: 300px;
+    width: 600px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.roundtable  {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.script {
+    display: flex;
+    width: 500px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.wrighter {
+    font-size: 12px;
+    position: relative;
+    bottom: -20px;
+}
+
+.submission-box {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box {
+    margin: 5px;
+}
+
+.button {
+    /* margin: 5px; */
+}
+
+.word-bank {
+    background-color: rgb(204, 218, 230);
+    display: flex;
+
+}
+
+.word {
+    padding: 5px;
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+#prompt {
+    background-color: silver; 
+}
+
+#wrighter-1 {
+    background-color: #D66853; 
+}
+
+#wrighter-2 {
+    background-color: #2EC0F9;
+}
+
+#John {
+    color: gray;
+}
+
+#agent {
+    color: gray;
+}
+
+#emerged {
+    color: gray;
+}

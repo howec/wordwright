@@ -8,6 +8,8 @@ import LandingPage from "./components/LandingPage";
 import LoginCallback from "./components/LoginCallback";
 import WrightPage from "./components/WrightPage";
 import LetsWrightButton from "./components/LetsWrightButton";
+import Script from "./components/Script/Script";
+import Roundtable from "./components/Roundtable/Roundtable";
 
 import Alert from "react-s-alert";
 
@@ -25,6 +27,8 @@ const App: React.FC = () => {
               <Route path="/lets-wright-button" component={LetsWrightButton} />
               <Route path="/" exact component={LandingPage} />
               <Route path="/wright" component={WrightPage} />
+              <Route path="/script" component={Script} /> 
+              <Route path="/roundtable" component={Roundtable} />
             </Switch>
           </div>
         </CookiesProvider>
