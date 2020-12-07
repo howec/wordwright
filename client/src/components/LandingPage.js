@@ -48,11 +48,22 @@ class LandingPage extends Component {
   }
 
 
-  joinGame = () => {
-      this.changeState({page: "Game"})
+  joinGame = (roomCode) => {
+      //check if Room code is valid, if so join that specific room and change the client
+      //set the roomID to not be null
+      if (this.state.roomID === null){
+          this.changeState({roomID: "abc0"}); //should be roomCode ... dummy var
+      }
+
+      this.changeState({page: "Game"});
   }
 
   createGame = () => {
+      //create a new Room code to join and play in; forward creator into that room
+      //set the roomID to not be null
+      this.changeState({roomID: "abc0"});
+
+
       this.changeState({page: "Game"})
   }
 
@@ -82,7 +93,7 @@ class LandingPage extends Component {
         <div>
           <NavigationBar
             navbarItems = {[[this.toHome, "Home"], [this.toAbout, "About"]]}/>
-          <PageGame page = {this.state.page} toSummary = {this.toSummary}/>
+          <PageGame page = {this.state.page} roomID = {this.state.roomID} toSummary = {this.toSummary}/>
         </div>
         );
     } else if (this.state.page === "Summary"){
@@ -90,7 +101,7 @@ class LandingPage extends Component {
         <div>
           <NavigationBar
             navbarItems = {[[this.toHome, "Home"], [this.toAbout, "About"]]}/>
-          <PageSummary page = {this.state.page} />
+          <PageSummary page = {this.state.page} joinGame = {this.joinGame} />
         </div>
         );
     } else if (this.state.page === "About"){

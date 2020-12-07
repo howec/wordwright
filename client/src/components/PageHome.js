@@ -13,7 +13,7 @@ class PageHome extends Component {
   constructor(props){
     super(props);
 
-    this.state = {page: "Home"};
+    this.state = {page: "Home", roomID: null};
 
     // this.state = {page: "Home", listRooms : this.getRooms(), roomCode : ""};
   }
@@ -34,8 +34,7 @@ class PageHome extends Component {
     }
   }
 
-
-
+//Following code sippets is to LIST the rooms
 /*
             <h5> Open Rooms </h5>
             <div id = "centerElement">
@@ -48,7 +47,7 @@ class PageHome extends Component {
                 </div>
             </div>
 */
-
+/*
   //Having a lot of problems getting the items in the list to be clickable
   wrapListItem(content_val){
     return(
@@ -71,6 +70,7 @@ class PageHome extends Component {
     this.changeState({listRooms: listItems})
 
   }
+*/
 
   roomError(){
     //if this room doesn't exist in the backend API,

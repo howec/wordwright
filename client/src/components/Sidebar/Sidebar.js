@@ -100,7 +100,7 @@ disable() {
 			        <p>
 			        	Share with your friends:
 			        	<br />
-						<i>room code here</i>
+						<i>{this.props.roomID}</i>
 			        </p>
 			    </div>
 
@@ -114,18 +114,18 @@ disable() {
 			    	<h3> Set a Pen Name </h3>
 		        </div>
 
-				    <div id = "centerElement">    
-			            <Form onSubmit = {this.setUsername.bind(this)}>
+			    <div id = "centerElement">    
+		            <Form onSubmit = {this.setUsername.bind(this)}>
 
-			                  <Form.Group controlId = "form_username">
-			                    <Form.Control required type="text" placeholder="Pen name here" className = "standardizedButton" />
-			                  </Form.Group>
-							
-			                  {this.nameError()}
+		                  <Form.Group controlId = "form_username">
+		                    <Form.Control required type="text" placeholder="Pen name here" className = "standardizedButton" />
+		                  </Form.Group>
+						
+		                  {this.nameError()}
 
-			                
-		                </Form>
-	                </div>
+		                
+	                </Form>
+                </div>
 
 
 
