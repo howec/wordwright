@@ -5,11 +5,12 @@
  
 
 ## What it does
->   1. 
->   2. 
->   3. 
->   4. 
->   5. 
+>   1. Download the WordWright app.
+>   2. Either join an existing game using a game code or create a new game.
+>   3. Once in the game room choose one of the 5 themes: Marvel, Game of Thrones, Lord of the Rings, Harry Potter or Chicken Soup.
+>   4. A theme related prompt and wordbank appears and the game begins!
+>   5. Every player will have 30 seconds to submit a sentence attempting to use as many words as possible from the word bank provided.
+>   6. When the time is up the collaborative story will appear on the summary page and the player with the most words used is the winner!
 
 ## How we built it
 >   1.
