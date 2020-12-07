@@ -2,7 +2,7 @@ import attr
 
 @attr.s
 class Inspiration():
-    inspiration_id: int = attr.ib(default=None)
+    inspiration_id: str = attr.ib(default=None)
     # wordbank
     # nlg
     

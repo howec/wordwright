@@ -7,7 +7,7 @@ import AppHeader from "./AppHeader";
 import LandingPage from "./components/LandingPage";
 import LoginCallback from "./components/LoginCallback";
 import WrightPage from "./components/WrightPage";
-
+import LetsWrightButton from "./components/LetsWrightButton";
 
 //SIDEBAR
 // import Sidebar from "./components/Sidebar";
@@ -27,7 +27,7 @@ const App: React.FC = () => {
           <div className="App">
             <AppHeader />
             <Switch>
-
+              <Route path="/lets-wright-button" component={LetsWrightButton} />
               <Route path="/" exact component={LandingPage} />
               <Route path="/wright" component={WrightPage} />
             </Switch>

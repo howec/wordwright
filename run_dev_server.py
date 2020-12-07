@@ -5,8 +5,10 @@ Runs the backend server
 
 from flask import Flask
 from server.app import app
+from server.app import socketio
 
 app.config["APP-DEV"] = True
+app.config['SECRET_KEY'] = 'EnAbLiNg EnCrYpTiOn?!'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=app.config['PORT'])
+    socketio.run(host='0.0.0.0', port=app.config['PORT'])

@@ -1,8 +1,9 @@
-from server.models import RoomTracker
+from server.models.room_tracker import RoomTracker
 
 
 def init_room_tracker():
     return RoomTracker()
+
 
 
 

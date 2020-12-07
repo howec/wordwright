@@ -1,18 +1,12 @@
 from server.app import app
-from server.api.v1.api import api
-from server.controllers.cron import cron_job
+# from server.api.v1.api import api
 from flask import Flask
 from flask_restful import Api
-from apscheduler.schedulers.background import BackgroundScheduler
 import sys
+from server.controllers.room_tracker import *
 
-app.register_blueprint(api.blueprint, url_prefix='/api/v1')
-
-print("Initializing Background Scheduler")
-sched = BackgroundScheduler()
-sched.add_job(cron_job, trigger='interval', days=1)
-sched.start()
-cron_job()
+# app.register_blueprint(api.blueprint, url_prefix='/api/v1')
 
 # Initialize RoomTracker
-room_tracker = init_room_tracker()
+# print("Initializing RoomTracker")
+# room_tracker = init_room_tracker()
