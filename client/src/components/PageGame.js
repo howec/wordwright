@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import { Container, Button } from "reactstrap";
-
+import Roundtable from "./Roundtable/Roundtable";
 
 // import { Button, Form, Col, FormGroup, Checkbox } from 'react-bootstrap'
 import "./Page.css";
-
+import "./PageGame.css";
 
 //SIDEBAR
 import Sidebar from "./Sidebar/Sidebar";
@@ -40,19 +40,23 @@ class PageGame extends Component {
 
   render (){
     if(this.props.page === "Game"){
-      return (
-        <Container>
-          
-          <div className = "rowPage">
-            <Sidebar></Sidebar>
+      return (          
+        <div className = "rowPage">
+            <Sidebar roomID = {this.props.roomID}></Sidebar>
 
-            <div style={{textAlign:"center"}} id ="centerOnPage">
-              <h1> GAME </h1>
+            <div className='roundtable-container'>
+              <Roundtable></Roundtable>
             </div>
+            <div style={{textAlign:"center"}} id ="centerOnPage2">
+                
 
-          </div>
+                <Button onClick={this.props.toSummary} color="primary" className = "standardizedButton">
+                    TEMP: Go to Summary
+                </Button>
 
-        </Container>
+            </div>
+        </div>
+
       );
     } else {
       return null;

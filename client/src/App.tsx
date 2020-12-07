@@ -3,10 +3,8 @@ import "./App.css";
 import { CookiesProvider } from "react-cookie";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import AppHeader from "./AppHeader";
+// import AppHeader from "./AppHeader";
 import LandingPage from "./components/LandingPage";
-import LoginCallback from "./components/LoginCallback";
-import WrightPage from "./components/WrightPage";
 import LetsWrightButton from "./components/LetsWrightButton";
 import Script from "./components/Script/Script";
 import Roundtable from "./components/Roundtable/Roundtable";
@@ -26,7 +24,6 @@ const App: React.FC = () => {
             <Switch>
               <Route path="/lets-wright-button" component={LetsWrightButton} />
               <Route path="/" exact component={LandingPage} />
-              <Route path="/wright" component={WrightPage} />
               <Route path="/script" component={Script} /> 
               <Route path="/roundtable" component={Roundtable} />
             </Switch>
