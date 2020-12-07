@@ -31,7 +31,7 @@
 >   * Qualifying language that evokes togetherness
 
 ## Accomplishments that we're proud of
->   * Collected substanial amount of data using API calls
+>   * Collected substantial amount of data using API calls
 >   * Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
 >   * Generated a word bank containing words that represent each writing category 
 >   * Partially completed an interactive story writing web application using tools such as React and Flask
