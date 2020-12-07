@@ -50,7 +50,7 @@
 >   * How Natural Language Generators (NLG) models work
 
 ## What's next for WordWright
-> Our team will continue working on deploying the model, ... in order to produce the final story writing web app. We will also consider adding more writing categories and 
+> Our team will continue working on deploying the model, finalize the frontend design, connect the frontend and the backend, and deploy the final story writing web app on Heroku. We will also consider adding more writing categories and 
 
 
 ![words2](pictures/read&write.gif)
