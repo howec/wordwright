@@ -13,28 +13,33 @@
 >   6. When the time is up the collaborative story will appear on the summary page and the player with the most words used is the winner!
 
 ## How we built it
->   1.
->   2.
->   3.
->   4.
->   5.
+* React-Native - for the mobile application framework
+* JavaScript - web app development 
+* Python
+* Flask
+* PyTorch
+* APIs - data collection
+* Regular Expression - data cleaning to remove unnecessary punctuations and characters
 
 ## Challenges we ran into
->   * 
->   *
->   *
->   *
->   *
+>   * Used APIs for data collection that were difficult to use due to lack of proper documentations
+>   * Encountered issues with messy data when used for NLG model
+>   * Deploying models in the backend
+>   * Deploying the app with Heroku using Flask and React
+>   * Time constraint 
+>   * Setting up backend architecture to keep track of rooms and users
+>   * Qualifying language that evokes togetherness
 
 ## Accomplishments that we're proud of
 >   * Collected substanial amount of data using API calls
 >   * Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
 >   * Generated a word bank containing words that represent each writing category 
 >   * Partially completed an interactive story writing web application using tools such as React and Flask
->   * Cleaned datasets using Regular Expressions
+>   * Cleaned messy datasets using Regular Expressions
 >   * Worked together as a team 
 >   * Spent more than 50 hours on the project
 >   * Learned new methods
+>   * Reflecting togetherness through the game design
 
 
 ## What we learned
