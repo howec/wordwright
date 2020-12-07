@@ -5,16 +5,20 @@
 > 
 
 ## How we built it
->
+> 
 
 ## Challenges we ran into
 >
 
 ## Accomplishments that we're proud of
->
+>   * 1: Collected substanial amount of data using API calls
+>   * 2: Utilized a Natural Language Generator (NLG) to produce a prompt for each category
+>   * 3: 
+>   * 4:
+>   * 5:
 
 ## What we learned
->
+> 
 
 ## What's next for WordWright
 >
