@@ -4,6 +4,9 @@
 ## Inspiration
 > 
 
+## What it does
+>
+
 ## How we built it
 > 
 
@@ -12,10 +15,13 @@
 
 ## Accomplishments that we're proud of
 >   * 1: Collected substanial amount of data using API calls
->   * 2: Utilized a Natural Language Generator (NLG) to produce a prompt for each category
->   * 3: 
->   * 4:
->   * 5:
+>   * 2: Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
+>   * 3: Partially completed an interactive story writing web application using tools such as React
+>   * 4: Cleaned datasets using Regular Expressions
+>   * 5: Worked together as a team 
+>   * 6: Spent more than 50 hours on the project
+>   * 7: Learned new methods
+
 
 ## What we learned
 > 
