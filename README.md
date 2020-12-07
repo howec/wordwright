@@ -2,34 +2,60 @@
 ![words](pictures/together.gif)
 
 ## Inspiration
-> 
+From the five themes centered by Terminal Hackathon, we chose to focus on togetherness and find a way for users to spend quality time with friends and family in the midst of pandemic lockdown restrictions. We were inspired by a team member who did collaborative storytelling in her past. The idea is one person writes a sentence and the next person adds their own sentence to eventually create a story. We further expanded on this idea by providing themes to inspire the users to start writing. In an effort to maximize the connection between the participating users, we chose franchise themes that users would enjoy and be familiar with (Harry Potter, The Lord of the Rings, The Game of Thrones, Marvel) as well as a theme centered on deeper reflection (Chicken Noodle Soup for the Soul).
 
 ## What it does
->
+>   1. Download the WordWright app.
+>   2. Either join an existing game using a game code or create a new game.
+>   3. Once in the game room choose one of the 5 themes: Marvel, Game of Thrones, Lord of the Rings, Harry Potter or Chicken Soup.
+>   4. A theme related prompt and wordbank appears and the game begins!
+>   5. Every player will have 30 seconds to submit a sentence attempting to use as many words as possible from the word bank provided.
+>   6. When the time is up the collaborative story will appear on the summary page and the player with the most words used is the winner!
 
 ## How we built it
-> 
+>   * React-Native - for the mobile application framework
+>   * JavaScript - web app development 
+>   * Python - frontend and backend
+>   * Flask - Deploying the models in the backend 
+>   * PyTorch - Natural Language Generation 
+>   * APIs - data collection
+>   * Regular Expression - data cleaning to remove unnecessary punctuations and characters
 
 ## Challenges we ran into
->
+>   * Used APIs for data collection that were difficult to use due to lack of proper documentations
+>   * Encountered issues with messy data when used for NLG model
+>   * Deploying models in the backend
+>   * Deploying the app with Heroku using Flask and React
+>   * Time constraint 
+>   * Setting up backend architecture to keep track of rooms and users
+>   * Qualifying language that evokes togetherness
 
 ## Accomplishments that we're proud of
->   * 1: Collected substanial amount of data using API calls
->   * 2: Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
->   * 3: Partially completed an interactive story writing web application using tools such as React
->   * 4: Cleaned datasets using Regular Expressions
->   * 5: Worked together as a team 
->   * 6: Spent more than 50 hours on the project
->   * 7: Learned new methods
+>   * Collected substantial amount of data using API calls
+>   * Utilized a Natural Language Generator (NLG) using Pytorch to produce a prompt for each category
+>   * Generated a word bank containing words that represent each writing category 
+>   * Partially completed an interactive story writing web application using tools such as React and Flask
+>   * Cleaned messy datasets using Regular Expressions
+>   * Worked together as a team 
+>   * Spent more than 50 hours on the project
+>   * Learned new methods
+>   * Reflecting togetherness through the game design
 
 
 ## What we learned
-> 
+>   * Better communication between frontend and backend development early on
+>   * Improve how to clean and reorganize messy datasets
+>   * How to create backend logic for keeping track of several games and users at once 
+>   * How to better store models web app deployment 
+>   * How Natural Language Generators (NLG) models work
 
 ## What's next for WordWright
->
+> Our team will continue working on deploying the model, finalize the frontend design, connect the frontend and the backend, and deploy the final story writing web app on Heroku.
+
 
 ![words2](pictures/read&write.gif)
+
+
 
 # Template React + Flask framework
 
