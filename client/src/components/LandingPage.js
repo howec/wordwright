@@ -1,12 +1,7 @@
 import React, {Component} from "react";
-import { Container, Button } from "reactstrap";
 
 
 // import { Button, Form, Col, FormGroup, Checkbox } from 'react-bootstrap'
-
-
-//SIDEBAR
-import Sidebar from "./Sidebar/Sidebar";
 
 
 //NAVBAR
@@ -53,7 +48,7 @@ class LandingPage extends Component {
   }
 
 
-  toGame = () => {
+  joinGame = () => {
       this.changeState({page: "Game"})
   }
 
@@ -79,7 +74,7 @@ class LandingPage extends Component {
         <div>
           <NavigationBar
             navbarItems = {[[this.toHome, "Home"], [this.toAbout, "About"]]}/>
-          <PageHome page = {this.state.page} toGame = {this.toGame} createGame = {this.createGame}/>
+          <PageHome page = {this.state.page} joinGame = {this.joinGame} createGame = {this.createGame}/>
         </div>
       );
     } else if (this.state.page === "Game"){

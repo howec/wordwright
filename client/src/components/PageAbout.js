@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Container, Button } from "reactstrap";
+import { Container } from "reactstrap";
 
 
 // import { Button, Form, Col, FormGroup, Checkbox } from 'react-bootstrap'
@@ -7,7 +7,7 @@ import { Container, Button } from "reactstrap";
 import "./Page.css";
 
 //SIDEBAR
-import Sidebar from "./Sidebar/Sidebar";
+// import Sidebar from "./Sidebar/Sidebar";
 
 class PageAbout extends Component {
   constructor(props){
@@ -32,17 +32,14 @@ class PageAbout extends Component {
   }
 
 
-
-  setReadiness = () => {
-    //this.changeState({page: "Create"});
-  }
-
-
   render (){
     if(this.props.page === "About"){
       return (
         <Container>
-          <h1> ABOUT </h1>
+            <div id = "centerAboutDiv">
+                <h1> About Us </h1>
+                <p>This game was created to help people connect with friends and encourage... through storytelling and writing</p>
+            </div>
         </Container>
       );
     } else {

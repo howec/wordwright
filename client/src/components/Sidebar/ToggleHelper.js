@@ -9,6 +9,8 @@ import Fade from "./Fade";
 class ToggleHelper extends Component {
   constructor(props){
     super(props);
+
+    this.state = {}
   }
 
   _isMounted=false;

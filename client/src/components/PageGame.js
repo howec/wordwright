@@ -43,14 +43,18 @@ class PageGame extends Component {
       return (
         <Container>
           
-          <div className = "rowPage">
-            <Sidebar></Sidebar>
+            <div className = "rowPage">
+                <Sidebar></Sidebar>
 
-            <div style={{textAlign:"center"}} id ="centerOnPage">
-              <h1> GAME </h1>
+                <div style={{textAlign:"center"}} id ="centerOnPage">
+                    <h1> GAME </h1>
+
+                    <Button onClick={this.props.toSummary} color="primary" className = "standardizedButton">
+                        TEMP: Go to Summary
+                    </Button>
+                    
+                </div>
             </div>
-
-          </div>
 
         </Container>
       );

@@ -7,6 +7,8 @@ import "./Page.css";
 
 
 //SIDEBAR
+import Sidebar from "./Sidebar/Sidebar";
+
 
 class PageSummary extends Component {
   constructor(props){
@@ -31,17 +33,16 @@ class PageSummary extends Component {
   }
 
 
-
-  setReadiness = () => {
-    //this.changeState({page: "Create"});
-  }
-
-
   render (){
     if(this.props.page === "Summary"){
       return (
         <Container>
-          <h1> SUMMARY </h1>
+            <div className = "rowPage">
+
+                <div style={{textAlign:"center"}} id ="centerOnPage">
+                    <h1> SUMMARY </h1>
+                </div>
+            </div>
         </Container>
       );
     } else {

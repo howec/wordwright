@@ -8,9 +8,9 @@ import ToggleHelper from './ToggleHelper'
 
 export const SidebarContainer = ({ width, height, children }) => {
 
- const forceUpdateHandler = () =>{
-    this.forceUpdate();
-  };
+ // const forceUpdateHandler = () =>{
+ //    this.forceUpdate();
+ //  };
 
   const [xPosition, setX] = React.useState(-width);
   const [toggle, setToggle] = React.useState(false);

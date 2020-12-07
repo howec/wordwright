@@ -3,10 +3,9 @@ import "./App.css";
 import { CookiesProvider } from "react-cookie";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import AppHeader from "./AppHeader";
+// import AppHeader from "./AppHeader";
 import LandingPage from "./components/LandingPage";
-import LoginCallback from "./components/LoginCallback";
-import WrightPage from "./components/WrightPage";
+// import WrightPage from "./components/WrightPage";
 
 
 import Alert from "react-s-alert";
@@ -22,9 +21,7 @@ const App: React.FC = () => {
         <CookiesProvider>
           <div className="App">
             <Switch>
-
               <Route path="/" exact component={LandingPage} />
-              <Route path="/wright" component={WrightPage} />
             </Switch>
           </div>
         </CookiesProvider>

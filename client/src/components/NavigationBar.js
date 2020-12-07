@@ -2,12 +2,12 @@
 //this.props.navbarItems
 
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import $ from 'jquery';
-import Popper from 'popper.js';
+// import $ from 'jquery';
+// import Popper from 'popper.js';
 
 
 class NavigationBar extends Component {
@@ -26,7 +26,7 @@ class NavigationBar extends Component {
 	  		navbar.push(
 
 			          <li className="nav-item" key = {name}>
-			            <a className="nav-link" href = "#" onClick = {func}>{name}</a>
+			           		<a className="nav-link" href = "#" onClick = {func}>{name}</a>
 			          </li>
 	  			);
 	  	}
@@ -41,7 +41,7 @@ class NavigationBar extends Component {
 
   	// this.createNavBar(this.props.stuffTest);
 
-  	if(this.props.loggedIn == false){
+  	if(this.props.loggedIn === false){
     return (
 		<div>
 			<link

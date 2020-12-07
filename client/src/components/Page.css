@@ -11,3 +11,59 @@
   left: 50%;
   margin: -100px 0 0 -150px;
 }
+
+#centerAboutDiv {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+
+#centerElement {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.standardizedButton{
+ width:210px;
+ height:35px;
+ text-align:center;
+ line-height:1.1em;
+ font-size:1.1em;
+}
+
+
+.react-scrollable-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 300px;
+  width: 210px;
+  overflow-y: scroll;
+  border: #ddd solid 1px;
+}
+
+.react-scrollable-list-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-bottom: #ddd solid 1px;
+  pointer-events: none;
+
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
