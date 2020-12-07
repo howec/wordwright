@@ -1,4 +1,5 @@
 # WordWright
+![words](pictures/together.gif)
 
 # Template React + Flask framework
 
