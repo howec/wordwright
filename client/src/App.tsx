@@ -9,10 +9,6 @@ import LoginCallback from "./components/LoginCallback";
 import WrightPage from "./components/WrightPage";
 import LetsWrightButton from "./components/LetsWrightButton";
 
-//SIDEBAR
-// import Sidebar from "./components/Sidebar";
-
-
 import Alert from "react-s-alert";
 
 import "react-s-alert/dist/s-alert-default.css";
@@ -25,7 +21,6 @@ const App: React.FC = () => {
       <Router>
         <CookiesProvider>
           <div className="App">
-            <AppHeader />
             <Switch>
               <Route path="/lets-wright-button" component={LetsWrightButton} />
               <Route path="/" exact component={LandingPage} />
