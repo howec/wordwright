@@ -2,16 +2,24 @@
 ![words](pictures/together.gif)
 
 ## Inspiration
+> 
 
 ## How we built it
+>
 
 ## Challenges we ran into
+>
 
 ## Accomplishments that we're proud of
+>
 
 ## What we learned
+>
 
 ## What's next for WordWright
+>
+
+![words2](pictures/read&write.gif)
 
 # Template React + Flask framework
 
